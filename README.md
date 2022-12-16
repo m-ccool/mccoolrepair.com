@@ -25,10 +25,7 @@ Built in HTML5, CSS3, SCSS, Javascript, PHP
 ## Description
 
 ## Installation
-Download new file tree root folder from Github page above. Unzip the folders into root website folder, allow assets to override. 
 
-Circumstance: Conflict on merge/broken website
-Fix: Delete all website documents (currently: index.html, support.html, sitemap.xml, README.md, assets (folder))
 ## Usage
 
 ### Scripts
@@ -36,7 +33,7 @@ Fix: Delete all website documents (currently: index.html, support.html, sitemap.
 ## Guidelines
 
 ## Deploy Instructions
-Visit **[ fitndex.com ](https://fitndex.com)**
+Visit **[ https://mccoolrepair.com/ ](https://https://mccoolrepair.com/)**
 
 ## License
 ## Author
