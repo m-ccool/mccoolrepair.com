@@ -1,4 +1,4 @@
-# FITNDEX (PWA) WEBSITE
+# BUSINESS SHOWCASE DYNAMIC MOBILE FIRST WEBSITE
 Current Version: v1.1
 Mobile-first Progressive Web Application for Residential Repair & Maintenance company. 
 Built in HTML5, CSS3, SCSS, Javascript, PHP
