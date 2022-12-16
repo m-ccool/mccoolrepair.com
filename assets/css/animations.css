@@ -1,0 +1,360 @@
+@keyframes growShrink {
+  0% {
+    transform: scale(1.0);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1.0);
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--bs-green);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes pulse-fade {
+  0% {
+    transform: scale(1.0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(.95);
+    opacity: .5;
+  }
+  100% {
+    transform: scale(1.0);
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hueRotate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes rubberBounce {
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25,.75,1);
+    transform: scale3d(1.25,.75,1);
+  }
+  40% {
+    -webkit-transform: scale3d(.75,1.25,1);
+    transform: scale3d(.75,1.25,1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15,.85,1);
+    transform: scale3d(1.15,.85,1);
+  }
+  60% {
+    -webkit-transform: scale3d(.95,1.05,1);
+    transform: scale3d(.95,1.05,1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05,.95,1);
+    transform: scale3d(1.05,.95,1);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+.ref-button:hover {
+  color: #ffffff;
+  transition: all 500ms ease-in-out;
+  animation: growShrink 500ms ease-in-out;
+  /*box-shadow: 0px 0px 25px rgba(255,255,255,0.6);*/
+  /*color: white;*/
+  /*transition: color 500ms ease-in-out;*/
+}
+
+.modal-content {
+  border: 1px solid rgba(255,255,255,0.25);
+  backdrop-filter: blur(25px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: .5vw 1vw;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #00000076;
+  background-clip: padding-box;
+  /*border: 1px solid rgba(0,0,0,.2);*/
+  border-radius: 3rem;
+  /*outline: 0;*/
+}
+
+.ref-product-data {
+  color: rgba(255,255,255,0.9);
+}
+
+.ref-prodyct-info.ref-product-category {
+  color: rgb(255,255,255);
+}
+
+.ref-price-col {
+  font-size: smaller;
+  color: white;
+}
+
+.ref-total-col {
+  font-size: smaller;
+  color: white;
+}
+
+.ref-quantity-col {
+  font-size: smaller;
+  /*padding: 0 2.5vw;*/
+  color: white;
+}
+
+.ref-links {
+  font-size: x-small;
+  letter-spacing: 1.5px;
+  margin: 10px;
+  /*color: #ffffff;*/
+}
+
+.ref-totals {
+  font-size: small;
+  color: rgba(255,255,255,0.9);
+}
+
+.ref-product-variants {
+  color: #ffffff;
+}
+
+.ref-product-wrapper {
+  /*color: #ffffff;*/
+}
+
+.reflow-shopping-cart .ref-cart .ref-th {
+  /*display: none;*/
+  width: 100%;
+  font-size: .75em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  padding: 12px 0;
+}
+
+.reflow-shopping-cart .ref-cart .ref-footer {
+  /*display: flex;*/
+  /*flex-direction: column-reverse;*/
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255,255,255,0.25);
+  padding-top: 15px;
+  margin-top: 25px;
+}
+
+.reflow-shopping-cart .ref-checkout .ref-back {
+  font-size: 1.5em;
+  font-family: 'Dongle';
+  cursor: pointer;
+  margin-bottom: 6px;
+  color: rgba(255,255,255,0.5);
+}
+
+.reflow-shopping-cart .ref-checkout label {
+  color: #ffffff63;
+  display: block;
+  font-family: 'Dongle';
+  margin-bottom: 16px;
+}
+
+.reflow-shopping-cart .ref-checkout .ref-summary-toggle .ref-field-toggle {
+  padding: 1em 5%;
+  color: rgba(255,255,255,0.5);
+  font-family: 'Dongle';
+}
+
+.modal-title-h {
+  font-size: calc(1.25em + .05vw);
+  color: rgba(255,255,255,0.85);
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  font-family: 'Lexend Giga';
+}
+
+.item.gallery-col {
+  height: auto;
+  transition: width 750ms ease-in-out;
+  transform: scale(1.0);
+  /*border-radius: 25px;*/
+  padding: 0;
+  margin: 10px;
+  overflow: visible;
+  max-width: calc(200px + 25vw);
+  max-height: calc(200px + 25vw);
+}
+
+.colored-div.colored-div-l {
+  /*padding-right: 205PX;*/
+  /*overflow: visible;*/
+  border-top-right-radius: 25vw;
+  border-bottom-right-radius: 25vw;
+  /*margin-right: 10px;*/
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-left: 0;
+}
+
+option {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  background: rgb(0,0,0);
+  color: white;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+
+.div-neon-frame {
+  padding: 2px;
+  border-radius: 25px;
+}
+
+@keyframes pulse-fade {
+  0% {
+    transform: scale(1.0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(.95);
+    opacity: .5;
+  }
+  100% {
+    transform: scale(1.0);
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slow-blink {
+  0% {
+    transform: scale(.25);
+    /*color: #ff2e92;*/
+    opacity: 0;
+  }
+  50% {
+    transform: scale(.90);
+    /*color: #ff862e;*/
+    opacity: .5;
+  }
+  75% {
+    transform: scale(1.15);
+    color: #4bff2e;
+    opacity: 1;
+  }
+  100% {
+    transform: scale(.75);
+    color: #2ed9ff;
+    opacity: .5;
+  }
+  to {
+    transform: scale(.5);
+    /*color: #ff2ed1;*/
+    opacity: .2;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+#web-portfolio-frame {
+  box-shadow: 5px 5px 20px 0px rgb(0,0,0);
+}
+
+.outter-bar {
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.15);
+  background-color: var(--bs-body-bubble);
+  width: calc(250px + 15vw);
+  padding: 6px;
+  border-radius: 25px;
+}
+
+.contact-form-group-input {
+  /*margin-left: 15PX;*/
+  justify-content: center!important;
+  display: flex!important;
+  align-items: center!important;
+}
+
+.form-icon {
+}
+
+.p-form-notice {
+  /*margin: 25px!important;*/
+  /*transition: all 950ms ease;*/
+  width: 100%;
+  text-shadow: 0px 0px 9px var(--bs-body-bubble);
+  text-align: center!important;
+  color: rgba(255,255,255,0.95);
+  font-size: 1.25em;
+  letter-spacing: 2px;
+  font-family: 'Dongle';
+  text-transform: capitalize;
+}
+
